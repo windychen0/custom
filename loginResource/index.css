@@ -1,0 +1,57 @@
+html,body{
+	height: 100%;
+}
+
+.custom_login_body{
+	margin: 0;
+	padding: 0;
+	background-image: url(./index.jpg);	/* 背景图片 */
+	background-repeat: no-repeat;	/* 背景图片不重复 */
+	background-size: cover;
+}
+
+.custom_login_container{
+	margin: 0 auto;	/* login框剧中 */
+	margin-top: 200px; /* login框与顶部的距离 */
+	padding: 20px 50px;	/* login框内部的距离(内部与输入框和按钮的距离) */
+	background-color: #00000090;	/* login框背景颜色和透明度 */
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;	/* 圆角边 */
+	text-align: center;	/* 框内所有内容剧中 */
+}
+
+
+input[type='text'],
+input[type='password'] {
+  height: 40px;
+  width: 200px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  text-indent: 20px;
+  transition: 0.3;
+  outline: none;
+  color: aliceblue;
+}
+
+/* input[type='text']:hover,
+input[type='password']:hover {
+  border-color: #42b983;
+} */
+
+input[type='text']:focus,
+input[type='password']:focus {
+  border-bottom-color: #aaffff;
+}
+
+input[type='password']::-webkit-input-placeholder,
+input[type='text']::-webkit-input-placeholder {
+  transition: 0.5s;
+  font-size: 14px;
+  transform-origin: top left;
+}
+input[type='password']:focus::-webkit-input-placeholder,
+input[type='text']:focus::-webkit-input-placeholder {
+  transform: scale(0.8) translateY(-10px);
+}
